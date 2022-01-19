@@ -3,7 +3,7 @@ kind: Broker
 metadata:
   annotations:
     eventing.knative.dev/broker.class: Kafka
-  name: trader
+  name: default
 spec:
   config:
     apiVersion: v1

@@ -3,7 +3,7 @@ kind: Trigger
 metadata:
   name: trade-trigger
 spec:
-  broker: trader
+  broker: default
   filter:
     attributes:
       source: /apis/v1/namespaces/default/kafkasources/kafka-source-to-broker#trade-events
