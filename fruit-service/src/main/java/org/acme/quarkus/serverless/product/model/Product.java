@@ -3,7 +3,6 @@ package org.acme.quarkus.serverless.product.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
-import org.acme.quarkus.serverless.product.service.FruitService;
 
 import javax.persistence.Entity;
 
