@@ -116,5 +116,3 @@ You can use hey to simulate some load and observe autoscaling behavior:
 hey -z 30s -c 50 <route>  && kubectl get pods --watch
 ````
 
-hey -z 30s -c 150  -m POST   -H 'Content-Type:application/json' -d '{"id": "1", "status":"NEW", "customerId":1, "productId":1}' https://trade-service-trader.rhd-ams03-jan18-348793748-4c50a18a6ae19b704aa10d04d75751f8-0000.ams03.containers.appdomain.cloud/trade
-hey -z 30s -c 150  -m POST   -H 'Content-Type:application/json' -d '{"id": "1", "status":"CANCELLED", "customerId":1, "productId":1}'  https://order-service-trader.rhd-ams03-jan18-348793748-4c50a18a6ae19b704aa10d04d75751f8-0000.ams03.containers.appdomain.cloud/save 
