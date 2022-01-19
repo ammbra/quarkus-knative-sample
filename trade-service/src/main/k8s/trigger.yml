@@ -1,0 +1,16 @@
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: trade-trigger
+spec:
+  broker: trader
+  filter:
+    attributes:
+      source: /apis/v1/namespaces/default/kafkasources/kafka-source-to-broker#trade-events
+      type: dev.knative.kafka.event
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: trade-service
+    uri: /trade
