@@ -82,7 +82,7 @@ kn service create order-service  --image=quay.io/anasandbox/order-service:1.0-SN
  kubectl apply -f trade-service/src/main/k8s/trigger.yml
 ```
 
-8. Create `KafkaSource` for sink:
+8. Create `KafkaSource` to sink:
 ```
  kubectl apply -f fruit-service/src/main/k8s/source.yml
 ```
