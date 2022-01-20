@@ -14,7 +14,7 @@ For the `trade-service` initialization is performed at startup as well.
 I installed Knative using the Red Hat OpenShift Serverless operator available in OpenShift and instantiated Knative Serving and Eventing
 3. Install https://github.com/knative-sandbox/eventing-kafka-broker/releases[Kafka Eventing Broker]. I instantiated it from the operator.
 4. Install Kafka cluster either with the Strimzi operator or the Red Hat Integration - AMQ Streams operator available in OpenShift. 
-I installed it in the kafka namespace/project. The name of my cluster is my-cluster.
+I installed it in the kafka namespace/project. The name of my Kafka instance is `my-cluster`.
 5. Install KafkaSource CRD:
 ````
 kubectl apply -f https://storage.googleapis.com/knative-releases/eventing-contrib/latest/kafka-source.yaml
