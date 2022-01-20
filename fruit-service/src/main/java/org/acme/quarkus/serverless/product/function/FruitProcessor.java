@@ -59,7 +59,7 @@ public class FruitProcessor {
         LOGGER.info("Product:{}", product);
         product.setReservedItems(product.getReservedItems() - order.getProductsCount());
 
-        if (order.getStatus() == OrderStatus.CANCELLED && !order.getRejected().equals(SOURCE)) {
+        if (order.getStatus() == OrderStatus.CANCELLED && order.getRejected() != null && !order.getRejected().equals(SOURCE)) {
             product.setAvailableItems(product.getAvailableItems() + order.getProductsCount());
         }
         repository.persist(product);
