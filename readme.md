@@ -43,7 +43,7 @@ If you prefer `kn` CLI:
 ````
 kn service create fruit-service  --image=quay.io/anasandbox/fruit-service:1.0.0-SNAPSHOT --env "KAFKA_TOPIC=trade-events"
 kn service create trade-service  --image=quay.io/anasandbox/trade-service:1.0.0-SNAPSHOT --env "KAFKA_TOPIC=trade-events"
-kn service create order-service  --image=quay.io/anasandbox/order-service:1.0.0-SNAPSHOT --env "KAFKA_TOPIC=order-events"
+kn service create order-service  --image=quay.io/anasandbox/order-service:1.0-SNAPSHOT --env "KAFKA_TOPIC=order-events"
 ````
 
 
