@@ -87,7 +87,7 @@ kn service create order-service  --image=quay.io/anasandbox/order-service:1.0-SN
  kubectl apply -f fruit-service/src/main/k8s/source.yml
 ```
 
-##Autoscaling simulation
+## Autoscaling simulation
 
 1. Delete all the services previously created:
 
