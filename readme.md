@@ -1,4 +1,6 @@
-# Serverless with Knative Eventing and Quarkus
+# Please be aware that this project is archived!
+
+## Serverless with Knative Eventing and Quarkus
 
 The code available here is inspired from https://github.com/piomin/sample-quarkus-serverless-kafka 
 and was adapted to use Quarkus native mode and separate databases for each microservice.
